@@ -1,11 +1,12 @@
 import random
 import itertools
 
+#per functie het beste een functiecomment om te zien wat elke functie doet. bijvoorbeeld bij show_gameplay()
+
 secret = []
 letters = ["A", "B", "C", "D", "E", "F"]
-board = [["X" for x in range(4)] for y in range(10)]
+board = [["X" for x in range(4)] for y in range(10)] #Hier misschien comment van wat dit betekent
 turn = 0
-
 
 def guess():
     letters_combinations = sorted(list(itertools.product("ABCDEF", repeat=4)))
@@ -35,8 +36,8 @@ def check_answer(check):
 
     return (red, white)
 
-
-def show_gameplay():
+#deze definitie misschien ergens anders in verwerken aangezien ie 1 regel is
+def show_gameplay(): #heel kort en berijp niet wat je hier bedoelt
     for y in board:
         print(y)
 
